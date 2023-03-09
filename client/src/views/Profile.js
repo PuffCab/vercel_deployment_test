@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import getToken from "../utils/getToken";
+import { serverURL } from "../utils/serverURL";
 
 function Profile() {
   const [userProfile, setUserProfile] = useState({});
@@ -17,8 +18,13 @@ function Profile() {
         headers: myHeaders,
       };
       try {
+        // const response = await fetch(
+        //   "http://localhost:5005/api/users/profile",
+        //   requestOptions
+        // );
+
         const response = await fetch(
-          "https://vercel-test-2-khaki.vercel.app/api/users/profile",
+          `${serverURL}/api/users/profile`,
           requestOptions
         );
         const result = await response.json();
