@@ -18,7 +18,7 @@ function Profile() {
       };
       try {
         const response = await fetch(
-          "http://localhost:5005/api/users/profile",
+          "https://vercel-test-2-khaki.vercel.app/api/users/profile",
           requestOptions
         );
         const result = await response.json();

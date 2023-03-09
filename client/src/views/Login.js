@@ -20,7 +20,7 @@ function Login() {
 
     try {
       const response = await fetch(
-        "http://localhost:5005/api/users/login",
+        "https://vercel-test-2-khaki.vercel.app/api/users/login",
         requestOptions
       );
       const result = await response.json();
