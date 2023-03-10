@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { serverURL } from "../utils/serverURL";
 
 function Register() {
   const [selectedFile, setSelectedFile] = useState(null);
