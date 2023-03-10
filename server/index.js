@@ -35,7 +35,8 @@ const addMiddleware = () => {
     },
   };
 
-  app.use(cors(corsOptions));
+  // app.use(cors(corsOptions));
+  app.use(cors());
   cloudinaryConfig();
 
   app.use(passport.initialize());
