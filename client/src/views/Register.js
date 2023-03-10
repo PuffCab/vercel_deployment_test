@@ -51,8 +51,12 @@ function Register() {
       body: urlencoded,
     };
     try {
+      // const response = await fetch(
+      //   "http://localhost:5005/api/users/signUp",
+      //   requestOptions
+      // );
       const response = await fetch(
-        "http://localhost:5005/api/users/signUp",
+        `${serverURL}/api/users/signUp`,
         requestOptions
       );
       const results = await response.json();
