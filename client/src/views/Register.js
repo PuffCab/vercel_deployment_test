@@ -22,7 +22,7 @@ function Register() {
     };
     try {
       const response = await fetch(
-        "https://vercel-test-2-khaki.vercel.app/imageUpload",
+        `${serverURL}/api/users/imageUpload`,
         requestOptions
       );
       const result = await response.json();
