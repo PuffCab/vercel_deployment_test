@@ -23,7 +23,7 @@ const addMiddleware = () => {
   );
   const allowedOrigins = [
     "https://vercel-front-app.vercel.app/",
-    "http://localhost:5005",
+    "http://localhost:3000",
   ];
   var corsOptions = {
     origin: function (origin, callback) {
